@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jarah Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css"/>
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Jarah Portfolio</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Jarah Portfolio</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+            </div>
+        <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()" >About</a></li>
+            <li><a href="#experience" onclick="toggleMenu()" >experience</a></li>
+            <li><a href="#contact" onclick="toggleMenu()" >Contact</a></li>
+         </div>
+        </div>
+    
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/about-pic.png" alt="Jarah Profile Picture"/>
+        </div>
+        <div class="section_text">
+            <p class="section_text__p1">hello , I'm</p>
+            <h1 class="title">Jarah</h1>
+            <p class="section__text__p2">MIS student</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2"
+                onclick="window.open('./assets/resume.pdf')"
+                >Download CV
+            </button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                Contact Info.
+            </button>
+            </div>
+            <div id="socials-container">
+                <img
+                 src="./assets/linkedin.png" alt="LinkedIn" 
+                class="icon" onclick="location.href='https://www.linkedin.com/in/jarahalotaibi/'"
+                />
+                <img
+                 src="./assets/github.png" alt="GitHub" 
+                class="icon" onclick="location.href='https://github.com/Jarah4'"
+                />
+            </div>
+            </div>
+            
+        </div>
+    </section>
+    <section id="about"> 
+       <p class="section_text__p1">Know more about me</p>
+       <h1 class="title">About me</h1>
+       <div class="section-container">
+        <div class="section__pic-container">
+            <img 
+            src="./assets/about-pic.png" 
+            alt="Profile Picture"
+            class="about pic"
+             />
+         </div>
+        <div class="about-detailes-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <img 
+                    src="./assets/experience.png"
+                    alt="experience icon" 
+                    class="icon"
+                    />
+                    <h3>Experience</h3>
+                    <p>0 years, but i learned a lot over the past couple of weeks after trial and error many times ,<br> i've become decent i guess.</p>
+                </div>
+                <div class="details-container">
+                    <img 
+                    src="./assets/education.png"
+                    alt="education icon" 
+                    class="icon"
+                    />
+                    <h3>Education</h3>
+                    <p>Bachelors Degree <br>MIS </p>
+                </div>
+            </div>
+            <div class="text-container">
+                <p>Hello, I'm Jarah, a dedicated MIS student who is passionate about web development. Despite having no formal work experience, I've embarked on a journey of self-discovery and skill development. Over the past couple of weeks, I've immersed myself in HTML, learning through trial and error. Today, I can proudly say that I've grown into a decent web developer.</p>
+            </div>
+        </div>
+       </div>
+       <img src="./assets/arrow.png" 
+       alt="arrow icon" 
+       class="icon arrow"
+       onclick="location.href='./#experience'">
+    </section>
+    <section id="experience">
+        <p class="section__text__p1">Explore my</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Programming & Frontend development</h2>
+                    <div class="article-container">
+                     <p>As a programmer, I've delved into various programming languages, including HTML, CSS, JavaScript, Java, Python, and C++. Through hands-on projects and coursework, I've honed my abilities in these languages, allowing me to create and optimize software solutions. </p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Get in touch</p>
+        <h1 class="title">Contact me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png"
+                 alt="email icon" 
+                 class="icon contact-icon"
+                />
+                <p> <a href="mailto:jra7khalid4@gmail.com">jra7khalid4@gmail.com </a> </p>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png"
+                 alt="LinkedIn icon" 
+                 class="icon contact-icon"
+                />
+                <p> <a href="https://www.linkedin.com/in/jarahalotaibi/">LinkedIn </a> </p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2023 Jarah. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+ </body>
+</html>
